@@ -52,11 +52,9 @@
 
 ## Step 3: Run experiment
 
-    - Custom workload files to change workload ratios can be found in `experimentFiles/workloads`
-    - Record system details:
-        - Navigate to root directory of repo and call: `docker exec -it mongo mongostat 1 | tee system/mongostat_live.txt`
-        - Results will be stored in `system` directory
-    - Run experimental loop:
-        - Navigate to `experimentFiles/scripts`
-        - Call: `./run_experiments.sh`
-        - Individual trial results will be stored in `results/raw`
+- Custom workload files to change workload ratios can be found in `experimentFiles/workloads`
+- Record system details: - Navigate to root directory of repo and call: `docker exec -it mongo mongostat 1 | tee system/mongostat_live.txt` - Results will be stored in `system` directory
+- Run experimental loop:
+  - Navigate to `experimentFiles/scripts`
+  - Call: `./run_experiments.sh`
+  - Individual trial results will be stored in `results/raw`
